@@ -1069,7 +1069,7 @@ aws ecr create-repository \
 * Prepare a script to create Docker Registry for `dev` on AWS ECR and save it as `create-ecr-docker-registry-for-dev.sh` under `infrastructure` folder.
 
 ``` bash
-PATH="$PATH:/usr/local/bin"
+PATH="$PATH:/usr/bin"
 APP_REPO_NAME="clarusway-repo/petclinic-app-dev"
 AWS_REGION="us-east-1"
 
