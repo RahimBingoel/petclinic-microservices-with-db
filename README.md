@@ -1373,7 +1373,7 @@ git push --set-upstream origin feature/msp-16
 ```bash
 echo $PATH
 whoami
-PATH="$PATH:/usr/local/bin"
+PATH="$PATH:/usr/local/bin:/usr/bin"
 python3 --version
 pip3 --version
 ansible --version
