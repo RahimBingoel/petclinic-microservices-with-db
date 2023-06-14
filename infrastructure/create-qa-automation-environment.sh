@@ -1,4 +1,5 @@
-ATH="$PATH:/usr/local/bin"
+# Environment variables
+PATH="$PATH:/usr/local/bin"
 APP_NAME="Petclinic"
 ANS_KEYPAIR="petclinic-$APP_NAME-dev-${BUILD_NUMBER}.key"
 AWS_REGION="us-east-1"
