@@ -16,7 +16,7 @@ driver = webdriver.Chrome(options=chrome_options)
 
 # Connect to the application
 APP_IP = os.environ['MASTER_PUBLIC_IP']
-url = "http://"+APP_IP.strip()+":30001/"
+url = "http://"+APP_IP.strip()+":8080/"
 print(url)
 driver.get(url)
 sleep(3)
@@ -30,14 +30,3 @@ verify_table = WebDriverWait(driver, 10).until(EC.presence_of_element_located((B
 print("Table loaded")
 
 driver.quit()
-```
-
-* Commit the change, then push the selenium jobs to the remote repo.
-
-``` bash
-git add .
-git commit -m 'added selenium jobs written in python'
-git push --set-upstream origin feature/msp-13
-git checkout dev
-git merge feature/msp-13
-git push origin dev
